@@ -1,0 +1,59 @@
+======================================================================
+
+                Type1 Fonts for ethiop.sty
+
+======================================================================
+                                                            2004-10-04
+                                                         Malte Rosenau
+                                                 
+
+This is a set of Type1 fonts for ethiop.sty, a LaTeX package for 
+typesetting Ethiopian languages. The 44 Postscript fonts included in this 
+collection were created from the original Metafont sources with mftrace. 
+Despite the fact that potrace does an amazing job, the quality of the 
+individual glyphs is by no means as good as in the original bitmap 
+version, so please do NOT use them for printing purposes. They look 
+pretty much ok in pdf files.
+
+Please report any bugs (missing glyphs, etc.) to:
+
+  mrosena AT gwdg de
+
+
+Installation
+------------
+
+1) Install the ethiop package from CTAN first
+
+2) Copy the *.pfb files to the directory
+
+  texmf/fonts/type1/ethiop
+
+of your TeX system. Most likely, you will have to create this directory
+first
+
+3) Copy ethiop.map to the directory 
+
+  texmf/dvips/config
+
+4) Add the following line to your updmap.cfg configuration file
+
+  Map ethiop.map
+
+5) Update TeX's filename database and run "texhash" (teTeX) 
+or "initexmf -u" and "initexmf --mkmaps" (MikTeX)
+
+
+License
+-------
+
+Copyright 1998 Berhanu Bayene, Manfred Kudlek, Olaf Kummer, Jochen 
+Metzinger. Coyright 2004 Malte Rosenau
+
+See the file COPYING (GNU General Public License) for license
+conditions. As a special exception, permission is granted to include
+this font program in a Postscript or PDF file that consists of a
+document that contains text to be displayed or printed using this font,
+regardless of the conditions or license applying to the document itself.
+
+== The End ==
