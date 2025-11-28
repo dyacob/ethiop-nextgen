@@ -1,10 +1,11 @@
 #!/bin/bash
 
+# /usr/local/opt/python\@3.14/libexec/bin/python mf2ff.py
+
 export PYTHONPATH="/usr/local/Cellar/fontforge/20251009_1/lib/python3.14/site-packages/"
 
 ffpython=/usr/local/opt/python\@3.14/libexec/bin/python
 
-# /usr/local/opt/python\@3.14/libexec/bin/python mf2ff.py
 
 echo "ARG: $1"
 ls -d $1/* |
